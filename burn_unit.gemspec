@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['dev@freewrite.org']
   spec.description   = %q{Test::Unit add-ons for Backburner}
   spec.summary       = %q{BurnUnit provides additional assertions for testing Ruby code that relies on Backburner}
-  spec.homepage      = 'http://github.com/freewrite/burn_unit'
+  spec.homepage      = 'https://github.com/freewrite/burn_unit'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'backburner'
+  spec.add_development_dependency 'activesupport'
+  spec.add_development_dependency 'stalk_climber'
 end
